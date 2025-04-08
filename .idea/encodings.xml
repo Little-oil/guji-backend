@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/instance/books.db" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/instance/tang_ds2.sql" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/models.py" charset="UTF-8" />
+  </component>
+</project>

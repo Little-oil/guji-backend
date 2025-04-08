@@ -25,7 +25,7 @@ def handle_options():
 
 
 # 数据库配置
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///books.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///tang4.7.sql' # 原本是用books.db
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['UPLOAD_FOLDER'] = "F:/guji/cantaloupe/cantaloupe-5.0.6/images/"  # 图片存储目录
 IIIF_SERVER_URL = "http://localhost:8182/iiif/2"  # Cantaloupe 服务器地址
@@ -145,6 +145,9 @@ def get_book(book_id):
         "images": book.get_images(),
         "osd_urls": osd_urls
     }), 200
+
+# 导入视图文件
+from views import *
 
 if __name__ == "__main__":
     app.run(debug=True, host="0.0.0.0", port=5000)
